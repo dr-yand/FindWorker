@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/drawer_menu_icon_width"
+            android:layout_height="@dimen/drawer_menu_icon_width"
+            android:id="@+id/icon"
+            android:src="@drawable/my_pots" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Политика конфеденциальности"
+            android:id="@+id/title"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/drawer_menu_icon_width"
+            android:layout_height="1dp"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/drawer_divider"
+            android:layout_marginLeft="10dp"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

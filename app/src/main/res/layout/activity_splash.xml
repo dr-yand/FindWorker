@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_splash_page1"
+            android:id="@+id/title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/page_indicator_height"
+            android:layout_height="@dimen/page_indicator_height"
+            android:id="@+id/page_1"
+            android:src="@drawable/page_indicator_selector" />
+
+        <ImageView
+            android:layout_width="@dimen/page_indicator_height"
+            android:layout_height="@dimen/page_indicator_height"
+            android:id="@+id/page_2"
+            android:src="@drawable/page_indicator_selector"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="@dimen/page_indicator_height"
+            android:layout_height="@dimen/page_indicator_height"
+            android:id="@+id/page_3"
+            android:src="@drawable/page_indicator_selector"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="@dimen/page_indicator_height"
+            android:layout_height="@dimen/page_indicator_height"
+            android:id="@+id/page_4"
+            android:src="@drawable/page_indicator_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/rounded_button_height"
+            android:layout_height="@dimen/rounded_button_height"
+            android:id="@+id/signin_fb"
+            android:clickable="true"
+            android:src="@drawable/fb_selector" />
+
+        <ImageView
+            android:layout_width="@dimen/rounded_button_height"
+            android:layout_height="@dimen/rounded_button_height"
+            android:id="@+id/signin_ok"
+            android:src="@drawable/ok_selector"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="@dimen/rounded_button_height"
+            android:layout_height="@dimen/rounded_button_height"
+            android:id="@+id/signin_vk"
+            android:clickable="true"
+            android:src="@drawable/vk_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:id="@+id/signin"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_selector"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:id="@+id/signup"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_selector"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

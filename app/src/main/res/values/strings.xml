@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FindWorker</string>
+    <string name="pots">Заказы</string>
+
+    <string name="facebook_app_id">*****52</string>
+    <integer name="com_vk_sdk_AppId">*****71</integer>
+    <string name="ok_app_id">*****816</string>
+    <string name="ok_public_key">*****BA</string>
+    <string name="ok_secret_key">*****1291</string>
+
+    <string name="title_splash_page1"><![CDATA[<b>FindWorker</b> - лучший способ <br/>находить исполнителей <br/>для любой задачи]]></string>
+    <string name="title_splash_page2"><![CDATA[Создайте задачу и получите <br/>мгновенные ответы <br/>от исполнителей]]></string>
+    <string name="title_splash_page3"><![CDATA[Выберите испольнителей <br/>с лучшим рейтингом <br/>и общайтесь в удобном чате]]></string>
+    <string name="title_splash_page4"><![CDATA[Как исполнитель выполняйте <br/>задания, увеличивайте <br/>свой рейтинг]]></string>
+
+    <string name="demo_max_label"></string>
+    <string name="demo_min_label"></string>
+
+    <string-array name="menu_sections">
+        <item>Мои заказы</item>
+        <item>Мои задания</item>
+        <item>Политика конфеденциальности</item>
+        <item>Соглашения пользователя</item>
+        <item>Рассказать друзьям</item>
+        <item>Обратная связь</item>
+    </string-array>
+</resources>
